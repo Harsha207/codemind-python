@@ -5,6 +5,6 @@ for i in range(n):
     b=a.copy()
     b.sort()
     q=b[::-1]
-    if a==b or a==q:
+    if a==q or a==b:
         c+=1
 print(c)

@@ -16,7 +16,7 @@ for i in range(t):
     for j in range(n,n+100):
         if isprime(j):
             break
-    if (n-i)<=(j-n):
+    if(n-i)<=(j-n):
         print(i)
     else:
         print(j)

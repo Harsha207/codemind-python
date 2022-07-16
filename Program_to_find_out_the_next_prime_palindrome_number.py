@@ -1,5 +1,5 @@
 def isprime(n):
-    if n==1:
+    if n==0:
         return 0
     else:
         for i in range(2,int(n**0.5)+1):
@@ -14,6 +14,7 @@ def pal(n):
         return 0
 n=int(input())
 n+=1
+
 while(pal(n))==0 or isprime(n)==0:
     n+=1
 print(n)

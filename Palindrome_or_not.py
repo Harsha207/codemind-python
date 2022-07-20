@@ -1,6 +1,6 @@
-st=input()
-st=st.upper()
-if st==st[::-1]:
-    print(True)
+s=input()
+s=s.lower()
+if s==s[::-1]:
+    print('True')
 else:
-    print(False)
+    print('False')

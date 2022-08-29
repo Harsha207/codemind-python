@@ -7,7 +7,7 @@ for i in l:
     if i not in range(a,b+1):
         s.append(i)
         f=1
-if f==1:
-    print(*s)
-else:
+if f==0:
     print('-1')
+else:
+    print(*s)

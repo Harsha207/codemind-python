@@ -1,14 +1,13 @@
-def digit(n):
+def dig(n):
     c=0
-    while n:
-        r=n%10
+    while n!=0:
         n//=10
         c+=1
     return c
 n=int(input())
 l=list(map(int,input().split()))
-a=[]
+s=[]
 for i in range(n):
-    a.append(digit(l[i]))
-x=max(a)
-print(a.count(x))
+    s.append(dig(l[i]))
+a=max(s)
+print(s.count(a))

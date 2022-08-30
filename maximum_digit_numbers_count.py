@@ -1,19 +1,18 @@
-def digit(n):
+def dig(n):
     if n==0:
         return 1
     c=0
     if n<0:
         n=-1*n
-    while(n):
-        r=n%10
+    while n!=0:
         n//=10
         c+=1
     return c
 n=int(input())
 l=list(map(int,input().split()))
-a=[]
+s=[]
 for i in range(n):
-    a.append(digit(l[i]))
+    s.append(dig(l[i]))
 for i in range(n):
-    if digit(l[i])==max(a):
+    if dig(l[i])==max(s):
         print(l[i],end=' ')

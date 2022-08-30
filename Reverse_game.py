@@ -7,6 +7,8 @@ def rev(n):
     return rev
 n=int(input())
 l=list(map(int,input().split()))
+s=[]
 for i in l:
     if rev(i):
-        print(rev(i),end=' ')
+        s.append(rev(i))
+print(*s)

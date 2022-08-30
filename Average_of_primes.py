@@ -14,5 +14,4 @@ for i in l:
         s.append(i)
 d=sum(s)
 e=len(s)
-a=d/e
-print("%.2f"%a)
+print("%.2f"%(d/e))

@@ -1,16 +1,20 @@
-def digit(n):
-    c=0
+def dig(n):
     if n==0:
         return 1
     elif n<0:
         n=n*-1
-    while(n):
+    c=0
+    while n!=0:
         n//=10
         c+=1
     return c
-x,y=map(int,input().split())
+n,k=map(int,input().split())
 l=list(map(int,input().split()))
-a=[]
-for i in range(x):
-    a.append(digit(l[i]))
-print(a.count(y))
+s=[]
+f=0
+for i in range(n):
+    s.append(dig(l[i]))
+for i in range(n):
+    if dig(l[i])==k:
+        f+=1
+print(f)

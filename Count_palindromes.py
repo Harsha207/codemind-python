@@ -5,7 +5,7 @@ def rev(n):
         r=n%10
         rev=rev*10+r
         n//=10
-    if rev==temp:
+    if temp==rev:
         return True
     else:
         return False
